@@ -85,4 +85,4 @@ Use the "ESP32-S2 Dev Board", got same errors.
 ## Other Noted Items
 
 - [Comments on DFRbot](https://www.dfrobot.com/product-2231.html#comment-5539242446)
-- [FireBeetle 2 ESP32-E wiki](https://wiki.dfrobot.com/FireBeetle_Board_ESP32_E_SKU_DFR0654)
+- [FireBeetle 2 ESP32-E wiki](https://wiki.dfrobot.com/FireBeetle_Board_ESP32_E_SKU_DFR0654) Has a lot of details on the board.
