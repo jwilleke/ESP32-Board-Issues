@@ -7,17 +7,20 @@ ESP32 Board Issues encountered
 [FireBeetle 2 ESP32-E](https://www.dfrobot.com/product-2231.html)
 
 ### Using:
-Arduino IDE: v 2.2.1
-Version: 2.2.1
-Date: 2023-08-31T14:26:39.874Z
-CLI Version: 0.34.0
+
+- Arduino IDE: v 2.2.1
+  - Version: 2.2.1
+  - Date: 2023-08-31T14:26:39.874Z
+  - CLI Version: 0.34.0
 
 ### on:
-ProductName:  macOS
-ProductVersion:  14.2
-BuildVersion:  23C64
+
+- ProductName:  macOS
+- ProductVersion:  14.2
+- BuildVersion:  23C64
 
 ### Also tried with:
+
 FireBeetle 2 ESP32-E IoT Microcontroller with Header
 
 ## Errors
