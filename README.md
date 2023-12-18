@@ -49,9 +49,22 @@ Tried different baud rates with the same results.
 
 ## What Works
 
-Same setup appears to work fine with Arduino UNO 4.
+Same setup appears to work fine with Arduino UNO 4 for both getting Baord Infor and uploads.
 
 However I have not been able to upgrade firmware to the board. May or may not be related.
+
+
+``` bash
+ll /dev/{tty,cu}.*
+crw-rw-rw-  1 root  wheel  0x9000003 Dec 18 08:30 /dev/cu.BLTH
+crw-rw-rw-  1 root  wheel  0x9000005 Dec 18 07:33 /dev/cu.Bluetooth-Incoming-Port
+crw-rw-rw-  1 root  wheel  0x9000001 Dec 18 08:40 /dev/cu.URT1
+crw-rw-rw-  1 root  wheel  0x9000007 Dec 18 08:42 /dev/cu.usbmodemF412FAA081C02
+crw-rw-rw-  1 root  wheel  0x9000002 Dec 18 07:27 /dev/tty.BLTH
+crw-rw-rw-  1 root  wheel  0x9000004 Dec 18 07:27 /dev/tty.Bluetooth-Incoming-Port
+crw-rw-rw-  1 root  wheel  0x9000000 Dec 18 07:27 /dev/tty.URT1
+crw-rw-rw-  1 root  wheel  0x9000006 Dec 18 08:42 /dev/tty.usbmodemF412FAA081C02
+```
 
 ## What I do See
 
@@ -59,12 +72,17 @@ However I have not been able to upgrade firmware to the board. May or may not be
 ll /dev/{tty,cu}.*
 crw-rw-rw-  1 root  wheel  0x9000003 Dec 18 08:15 /dev/cu.BLTH
 crw-rw-rw-  1 root  wheel  0x9000005 Dec 18 07:33 /dev/cu.Bluetooth-Incoming-Port
-crw-rw-rw-  1 root  wheel  0x9000001 Dec 18 07:47 /dev/cu.URT1
-crw-rw-rw-  1 root  wheel  0x9000002 Dec 18 07:27 /dev/tty.BLTH   # <== Works with Ardrunio
+crw-rw-rw-  1 root  wheel  0x9000001 Dec 18 07:47 /dev/cu.URT1 
+crw-rw-rw-  1 root  wheel  0x9000002 Dec 18 07:27 /dev/tty.BLTH   
 crw-rw-rw-  1 root  wheel  0x9000004 Dec 18 07:27 /dev/tty.Bluetooth-Incoming-Port
-crw-rw-rw-  1 root  wheel  0x9000000 Dec 18 07:27 /dev/tty.URT1
+crw-rw-rw-  1 root  wheel  0x9000000 Dec 18 07:27 /dev/tty.URT1 # <== Works with Ardrunio
 ```
+
+## What I have tried
+
+Use the "ESP32-S2 Dev Board", got same errors.
 
 ## Other Noted Items
 
-[Comments on DFRbot](https://www.dfrobot.com/product-2231.html#comment-5539242446)
+- [Comments on DFRbot](https://www.dfrobot.com/product-2231.html#comment-5539242446)
+- [FireBeetle 2 ESP32-E wiki](https://wiki.dfrobot.com/FireBeetle_Board_ESP32_E_SKU_DFR0654)
